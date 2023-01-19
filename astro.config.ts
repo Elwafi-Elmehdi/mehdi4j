@@ -8,7 +8,7 @@
 //
 // 
 // https://astro.build/config
-export default defineConfig({
+// export default defineConfig({
 // 	site: "https://www.astro-theme-cactus.netlify.app",
 // 	experimental: {
 // 		contentCollections: true,
@@ -36,6 +36,6 @@ export default defineConfig({
 import { defineConfig } from 'astro/config';
 import netlify from '@astrojs/netlify/functions';
 export default defineConfig({
-  output: 'server',
-  adapter: netlify()
+	output: 'server',
+	adapter: netlify()
 });
