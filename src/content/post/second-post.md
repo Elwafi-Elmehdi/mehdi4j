@@ -1,15 +1,7 @@
 ---
-title: "My Second Post"
-publishDate: "12 June 2022"
-description: "Another example post for Astro Cactus, this time written in a plain markdown file"
+title: "Hello world"
+publishDate: "12 January 1998"
+description: "A guide about preparing for terraform certification exam"
 tags: ["example", "blog"]
+draft: true
 ---
-
-## This is a post made with Markdown
-
-```js
-// Example JavaScript
-function returnSeven() {
-	return 7;
-}
-```
