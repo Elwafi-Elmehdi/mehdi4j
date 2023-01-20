@@ -1,8 +1,8 @@
 ---
 title: "CLEAR Your Terraform Associate Certification Exam"
-publishDate: "19 January 2023"
+publishDate: "28 Decenber 2022"
 description: "A guide about preparing for terraform certification exam"
-tags: ["terraform", "cert"]
+tags: ["terraform", "cert", "prep", "study-guide"]
 ---
 
 <img  src="/terraform-cert.png">

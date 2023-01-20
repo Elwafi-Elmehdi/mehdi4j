@@ -1,13 +1,13 @@
 ---
 title: "Terraform Your Proxmox Servers"
-publishDate: "19 January 2023"
+publishDate: "9 January 2023"
 description: "A guide about how to setup terraform with Proxmox VE"
 tags: ["proxmox", "iac", "terraform"]
 ---
 
 # Terraform Your Proxmox Servers
 
-<img src="/proxmox-Terraform.png">
+<img  src="/proxmox-Terraform.png" alt="Proxmox & Terraform Logos">
 
 In this guide we will explore how we can enable Infrastructure as Code for Proxmox VE using Terraform, we start looking at how we can connect Terraform with Proxmox VE, after that we deploy a simple virtual machine in Proxmox using configuration Language HCL. in this tutorial I assume that you have Terraform binary installed on your machine, and a reachable Proxmox Server.
 
@@ -47,7 +47,7 @@ After we created the user we can login and test permissions.
 
 Now we generate the token that Terraform provider will leverage to make authorized API calls to back-end server. Assuming you are logged in to Proxmox you can go to **Datacenter** and Scroll to **API Tokens.**
 
-<img width="680" height="259" src=":/b562c2b92b314196886c44ff297a504c" class="jop-noMdConv">
+<img src="/gen-token-proxmox.webp" alt="Proxmox Web UI : Add API Token Popup Window">
 
 Add API Token Proxmox Web Interface
 
