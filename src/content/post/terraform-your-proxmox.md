@@ -29,13 +29,13 @@ $ pveum user add terraform-prov@pve --password <password>
 
 In this step, we added a user named **terraform-prov** using the proxmox authentication realm which makes our user identifiable in all Proxmox nodes and we provided a strong password.
 
-```
+```shell
 $ pveum role add Terraform -privs "VM.Allocate VM.Clone VM.Config.CDROM VM.Config.CPU VM.Config.Cloudinit VM.Config.Disk VM.Config.HWType VM.Config.Memory VM.Config.Network VM.Config.Options VM.Monitor VM.Audit VM.PowerMgmt Datastore.AllocateSpace Datastore.Audit Pool.Allocate Pool.Audit"
 ```
 
 In this step, we defied a role for Terraform user to assume,roles is proxmox are a set of privileges that can users or group assume, you can pick and choose which privileges you want Terraform to have, in example above I have included all of privileges related to VM,Datastore (Disk Volumes) and Pools.
 
-```
+```shell
 $ pveum aclmod / -user terraform-prov@pve -role Terraform
 ```
 
@@ -61,7 +61,7 @@ As you see I have already generated my token, First you have to choose the user 
 
 In this section, we will use [Terraform Provider for Proxmox by Telmate](https://registry.terraform.io/providers/Telmate/proxmox/), but first we need to create a working directory for configuration files. and create files as shown below.
 
-```
+```bash
 ├── main.tf
 ├── outputs.tf
 ├── providers.tf
@@ -90,7 +90,7 @@ Now that we specified the providers we will instruct Terraform to go and downloa
 
 in you terminal, make sure you are in the working directory where your .tf files reside, run the command
 
-```
+```bash
 $ terraform init
 ```
 
@@ -136,13 +136,13 @@ $ echo "file_name.auto.vars" >> .gitignore
 
 Now let’s test if everything is set correctly by running the commend
 
-```
+```shell
 $ terraform plan --refresh-only
 ```
 
 the command above will connect to the proxmox server and refresh the state of Terraform, this is just a hacky way of testing connection and authorization between Terraform and Proxmox, If you got any errors just double check the steps above, now that we are successfully connected Terraform to Proxmox backend we can start writing Infrastructure as Code.
 
-```
+```hcl
 # main.tf
 resource "proxmox_vm_qemu" "pve_vm" {
   name        = "VM"
@@ -162,27 +162,25 @@ In the example above we declare a virtual machine with **4GiB Ram**, **2 cores**
 
 Let’s generate an execution plan to see what will change in the infrastructure
 
-```
+```shell
 $ terraform plan
 ```
 
 If everything seems, let’s proceed to the next step and apply the changes.
 
-```
+```shell
 $ terraform apply
 ```
 
 if you want to clean up all the Terraform managed resources.
 
-```
+```shell
 $ terraform destroy
 ```
 
-**Bonus Tip :** You can
+**Bonus Tip :** You can import existing VMs to Terraform State using import
 
-import existing VMs to Terraform State using import
-
-```
+```shell
 $ terraform import [options] [node]/qemu/[vmId]
 ```
 
