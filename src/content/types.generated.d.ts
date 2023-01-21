@@ -43,16 +43,23 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"post": {
-"clear-terraform-cert.md": {
-  id: "clear-terraform-cert.md",
-  slug: "clear-terraform-cert",
+"1-clear-terraform-cert.md": {
+  id: "1-clear-terraform-cert.md",
+  slug: "1-clear-terraform-cert",
   body: string,
   collection: "post",
   data: InferEntrySchema<"post">
 },
-"terraform-your-proxmox.md": {
-  id: "terraform-your-proxmox.md",
-  slug: "terraform-your-proxmox",
+"2-terraform-your-proxmox.md": {
+  id: "2-terraform-your-proxmox.md",
+  slug: "2-terraform-your-proxmox",
+  body: string,
+  collection: "post",
+  data: InferEntrySchema<"post">
+},
+"3-deploy-mariadb-server.md": {
+  id: "3-deploy-mariadb-server.md",
+  slug: "3-deploy-mariadb-server",
   body: string,
   collection: "post",
   data: InferEntrySchema<"post">

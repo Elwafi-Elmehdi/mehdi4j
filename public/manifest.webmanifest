@@ -1,7 +1,7 @@
 {
-	"name": "Astro Theme Cactus Demo",
-	"short_name": "Astro_Cactus",
-	"description": "Starter blog site for Astro",
+	"name": "Mehdi4J Portfolio",
+	"short_name": "Mehdi4J",
+	"description": "a blog where you can learn & find all tech related topics",
 	"icons": [
 		{
 			"src": "/192x192.png",
