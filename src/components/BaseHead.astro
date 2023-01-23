@@ -1,5 +1,6 @@
 ---
 import type { SiteMeta } from "@/data/siteMeta";
+import { GoogleAnalytics } from "astro-google-analytics";
 import siteConfig from "@/site-config";
 import "../styles/global.css";
 
@@ -53,3 +54,4 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 {image && <meta property="twitter:image" content={image} />}
+<GoogleAnalytics id="G-BWNYBD21XY" />
