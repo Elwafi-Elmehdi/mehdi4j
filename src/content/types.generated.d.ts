@@ -57,6 +57,13 @@ declare module 'astro:content' {
   collection: "post",
   data: InferEntrySchema<"post">
 },
+"terraform-cli-vs-cloud-workspaces.md": {
+  id: "terraform-cli-vs-cloud-workspaces.md",
+  slug: "terraform-cli-vs-cloud-workspaces",
+  body: string,
+  collection: "post",
+  data: InferEntrySchema<"post">
+},
 "terraform-s3-backend-with-encryption-state-locking.md": {
   id: "terraform-s3-backend-with-encryption-state-locking.md",
   slug: "terraform-s3-backend-with-encryption-state-locking",
