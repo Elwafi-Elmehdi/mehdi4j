@@ -5,8 +5,9 @@ description: "A guide about preparing for terraform certification exam"
 tags: ["terraform", "cert", "prep", "study-guide"]
 ---
 
-<img  src="/terraform-cert.png">
-
+<div align="center">
+    <img  src="/terraform-cert.png" alt="Terraform Badge Logo" >
+</div>
 In this article, I share some techniques and tips I used to pass the Terraform certification and my experience preparing and passing the HashiCorp Terraform Associate Certification (002). However, I will give some general guidelines so that this guide is not outdated when the version of the exam is updated.
 
 ## Exam Audience

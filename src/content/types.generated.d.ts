@@ -50,6 +50,13 @@ declare module 'astro:content' {
   collection: "post",
   data: InferEntrySchema<"post">
 },
+"delpoy-docker-to-proxmox.md": {
+  id: "delpoy-docker-to-proxmox.md",
+  slug: "delpoy-docker-to-proxmox",
+  body: string,
+  collection: "post",
+  data: InferEntrySchema<"post">
+},
 "deploy-mariadb-server.md": {
   id: "deploy-mariadb-server.md",
   slug: "deploy-mariadb-server",

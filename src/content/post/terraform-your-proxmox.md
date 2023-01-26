@@ -1,14 +1,15 @@
 ---
 title: "Terraform Your Proxmox Servers"
-publishDate: "9 January 2023"
+publishDate: "09 January 2023"
 description: "A guide about how to setup terraform with Proxmox VE"
 tags: ["proxmox", "iac", "terraform"]
 ---
 
 # Terraform Your Proxmox Servers
 
+<div align="center">
 <img  src="/proxmox-Terraform.png" alt="Proxmox & Terraform Logos">
-
+</div>
 In this guide we will explore how we can enable Infrastructure as Code for Proxmox VE using Terraform, we start looking at how we can connect Terraform with Proxmox VE, after that we deploy a simple virtual machine in Proxmox using configuration Language HCL. in this tutorial I assume that you have Terraform binary installed on your machine, and a reachable Proxmox Server.
 
 ## Proxmox Virtual Environment
