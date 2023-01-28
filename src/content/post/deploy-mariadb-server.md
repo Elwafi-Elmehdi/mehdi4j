@@ -2,7 +2,7 @@
 title: "Deploy & Configure MariaDB Server"
 publishDate: "21 January 2023"
 description: "Deploy and Configure MariaDB Server in a Linux environments"
-tags: ["mariadb", "sql", "linux", "dba", "database","operations"]
+tags: ["mariadb", "sql", "linux", "dba", "database", "operations"]
 ---
 
 in this guide, we are going to install & configure MariaDB server community edition on Linux server.
@@ -165,7 +165,7 @@ SELECT User,Host FROM user;
 - [Linuxhint Grant Privileges to users MySQL](https://linuxhint.com/grant-all-privileges-to-user-mysql/)
 - [MariaDB Documentation](https://mariadb.com/kb/en/)
 - [Configuring MariaDB for Remote Client Access](https://mariadb.com/kb/en/configuring-mariadb-for-remote-client-access/)
-- [MyCLI Project](www.mycli.net)
+- [MyCLI Project](https://mycli.net)
 
 ## Conclusion
 
