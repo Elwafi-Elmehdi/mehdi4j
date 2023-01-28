@@ -1,13 +1,9 @@
 ---
 title: "Deploy & Configure MariaDB Server"
 publishDate: "21 January 2023"
-description: "a comprehencive guide about Deploying and Configuring MariaDB Server"
-tags: ["mariadb", "sql", "linux", "dba", "database"]
+description: "Deploy and Configure MariaDB Server in a Linux environments"
+tags: ["mariadb", "sql", "linux", "dba", "database","operations"]
 ---
-
-<!-- <img class="w-auto flex justify-center" src="/mariadb.png" alt="MariaDB Logo"> -->
-
-<!-- ![mariadb.png](:/d101b80af6514f3aa507b42eab75f9d2) -->
 
 in this guide, we are going to install & configure MariaDB server community edition on Linux server.
 

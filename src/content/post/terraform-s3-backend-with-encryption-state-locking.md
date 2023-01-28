@@ -5,7 +5,7 @@ description: "Storing Terraform State on S3, with versioning,encryption and stat
 tags: ["terraform", "s3", "iac", "aws", "state"]
 ---
 
-### Terraform State
+## Terraform State
 
 Terraform state is single source of truth for your infrastructure as code, it defines and maps real resources like **VMs,Apps,shares**.... to **Terraform resources**, thus it is essential to store the state file in a reliable and durable storage.
 
@@ -13,12 +13,12 @@ Another aspect is security because Terraform is statefull (uses state) the state
 
 By default Terraform stores state file and previous version of file in the file system, where you first ran **terraform init**. local file systems are not reliable and secure to store such files. Terraform in this case uses default enhanced local backend, so what is a backend?
 
-### Terraform Backend
+## Terraform Backend
 
 A backend defines where and how Terraform stores its state data files.
 Terraform supports a variety of backends like **Terraform Cloud**, **Local**, **HTTP**, **S3** and many more you can check all available backend on [Terraform Docs](https://developer.hashicorp.com/terraform/language/settings/backends/).
 
-### AWS S3
+## AWS S3
 
 Amazon S3 is a object storage, its storage that offers high availability and durability,performance and security, it scales to petabytes of data and beyond. all these features makes S3 a great place for terraform state files.
 
@@ -28,13 +28,13 @@ Another feature is encryption, by default as of 2023-01 S3 uses a service key to
 
 For in flight encryption, S3 uses HTTPS endpoints which means all data flowing between Terraform machines and S3 is encrypted.
 
-### Terraform State Locking
+## Terraform State Locking
 
 State locking is a mechanism to control and manage change to the state file in a multi user environment.
 
 Terraform uses state locking to prevent inconsistencies in state file, by default Terraform local backend handles state locking by writhing to a special file during execution of any state altering command like **plan** or **apply**. This procedure is not recommended to implement the same procedure with S3, instead S3 backend leverages DynamoDB for caching lock-data.
 
-### AWS IAM Permissions.
+## AWS IAM Permissions.
 
 S3 uses AWS IAM to manage access to buckets and objects, and IAM relies on policies to define access to resources, before configuring Terraform, make sure your AWS user has the appropriate permissions that Terraform requires to to manage state and locking.
 
@@ -84,7 +84,7 @@ Generating access keys for IAM users is not covered by this guide and assumed to
 
 > **Never store secret tokens or sensitive data on HCL Configuration files, instead pass them as environment variables.**
 
-### Configurng S3 Backend
+## Configurng S3 Backend
 
 After successfully connecting Terraform with AWS IAM user with the propitiate permissions. we can configure terraform backend.
 
@@ -112,7 +112,7 @@ Sometimes, Terraform keeps the lock date after altering state, you can manually 
 $ terraform force-unlock
 ```
 
-### Resources
+## Resources
 
 - [S3 FAQs](https://aws.amazon.com/s3/faqs/)
 - [IAM FAQs](https://aws.amazon.com/iam/faqs/)
@@ -121,6 +121,6 @@ $ terraform force-unlock
 - [Terraform State Documentation](https://developer.hashicorp.com/terraform/language/state)
 - [Terraform State Locking Documentation](https://developer.hashicorp.com/terraform/language/state/locking)
 
-### Conclusion
+## Conclusion
 
 we have covered how to store state files on AWS S3, and how to securely connect to AWS S3, we also saw state mechanism using AWS DynamoDB. finally we configure Terraform to use S3 and Dynamo, and migrated state from local to S3.

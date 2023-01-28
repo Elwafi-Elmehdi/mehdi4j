@@ -2,7 +2,7 @@
 title: "Deploy Docker in Proxmox"
 publishDate: "26 January 2023"
 description: "Breif guide on deploying Docker in Proxmox VE Server"
-tags: ["docker", "proxmox", "container", "rancheros", "ops"]
+tags: ["docker", "proxmox", "container", "rancheros", "operations"]
 ---
 
 ## Rancher OS

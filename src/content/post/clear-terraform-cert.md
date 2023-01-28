@@ -1,8 +1,8 @@
 ---
 title: "CLEAR Your Terraform Associate Certification Exam"
 publishDate: "28 Decenber 2022"
-description: "A guide about preparing for terraform certification exam"
-tags: ["terraform", "cert", "prep", "study-guide"]
+description: "Resources and Tips that helps you pass Terraform exam, and help you obtain your certification"
+tags: ["terraform", "cert", "prep", "study-guide", "automation", "iac"]
 ---
 
 <div align="center">
@@ -100,11 +100,11 @@ I first started learning to terraform on the ACloudGuru platform with their free
 
 It took me about one month or less to be fully prepared to pass the exam, I watch videos course, do hands-on tasks, and read the documentation every day, it depends on your exposure to terraform if you have never heard of terraform maybe it will take you more then one month, or if you had little experience with terraform in the past it may take you 15 days, and if you are working with terraform professionally you can take 8h to look briefly the exam guide.
 
-## **My experience passing the exam**
+## My experience passing the exam
 
 The exam was not an easy task, I had to focus, and one thing that helped me a lot is to break the exam into springs to focus on each spring, and take short breaks between springs, another thing is to flag questions that you are uncertain about but be careful flagging too many questions at end you will not have enough time reviewing all of them. each question I tried to give the best answer I saw. I finished the exam in 30min and I took 10mins to review my answers. After I told my proctor, I got right away my result.
 
-## **Before you pass the exam.**
+## Before you pass the exam.
 
 Before you pass the exam make sure you had plenty of experience working with terraform and its ecosystem. Here are some bonus resources that will help you clear your exam.
 

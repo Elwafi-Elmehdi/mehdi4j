@@ -1,7 +1,7 @@
 ---
 title: "Terraform : CLI Workspaces vs Cloud Workspaces"
 publishDate: "25 January 2023"
-description: "Comparison between CLI Workspaces & Cloud Workspaces"
+description: "What's the difference between CLI Workspaces & Cloud Workspaces"
 tags: ["terraform", "iac", "automation"]
 ---
 
