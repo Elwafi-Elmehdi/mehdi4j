@@ -2,7 +2,7 @@
 title: "Terraform : CLI Workspaces vs Cloud Workspaces"
 publishDate: "25 January 2023"
 description: "What's the difference between CLI Workspaces & Cloud Workspaces"
-tags: ["terraform", "iac", "automation"]
+tags: ["terraform", "iac", "automation", "cloud"]
 ---
 
 I remember when I was learning Terraform, I came across Terraform CLI workspaces and and Cloud workspaces, it was confusing for me the difference between the two, in this post we are exploring both. and by the end of this post you will understand and differentiate between the two.

@@ -2,7 +2,7 @@
 title: "CLEAR Your Terraform Associate Certification Exam"
 publishDate: "28 Decenber 2022"
 description: "Resources and Tips that helps you pass Terraform exam, and help you obtain your certification"
-tags: ["terraform", "cert", "prep", "study-guide", "automation", "iac"]
+tags: ["terraform", "cert", "cloud", "automation", "iac"]
 ---
 
 <div align="center">
