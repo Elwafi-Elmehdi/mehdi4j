@@ -64,13 +64,6 @@ declare module 'astro:content' {
   collection: "post",
   data: InferEntrySchema<"post">
 },
-"mermaid-integration.mdx": {
-  id: "mermaid-integration.mdx",
-  slug: "mermaid-integration",
-  body: string,
-  collection: "post",
-  data: InferEntrySchema<"post">
-},
 "terraform-cli-vs-cloud-workspaces.md": {
   id: "terraform-cli-vs-cloud-workspaces.md",
   slug: "terraform-cli-vs-cloud-workspaces",
