@@ -4,6 +4,7 @@ import tailwind from "@astrojs/tailwind";
 import image from "@astrojs/image";
 import sitemap from "@astrojs/sitemap";
 import prefetch from "@astrojs/prefetch";
+import remarkMermaid from 'astro-diagram/remark-mermaid';
 
 
 
@@ -14,6 +15,13 @@ export default defineConfig({
 		contentCollections: true,
 	},
 	markdown: {
+		remarkPlugins: [
+			// remarkGfm,
+
+			remarkMermaid,
+
+			// ...
+		],
 		shikiConfig: {
 			theme: "dracula",
 			wrap: true,
