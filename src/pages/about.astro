@@ -2,7 +2,7 @@
 import PageLayout from "@/layouts/Base";
 import SocialList from "@/components/SocialList";
 
-// import { Image } from "@astrojs/image/components";
+import { Image } from "@astrojs/image/components";
 // import aboutImg from "../../public/mehdi.jpg";
 
 const meta = {
@@ -33,13 +33,15 @@ const meta = {
 		</p>
 		<SocialList />
 		<!-- <p class="mb-4 space-y-6">Found my content helpful?</p> -->
-		<a href="https://www.buymeacoffee.com/mehdi4j" target="_blank"
-			><img
-				src="buymecoffee.webp"
+		<a href="https://www.buymeacoffee.com/mehdi4j" target="_blank">
+			<Image
+				src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png"
+				width={217}
+				height={60}
 				alt="Buy Me A Coffee"
-				style="height: 60px !important;width: 217px !important;"
-			/></a
-		>
+				loading="eager"
+			/>
+		</a>
 		<!-- <div class="flex justify-center">
 			<Image
 				src={aboutImg}
