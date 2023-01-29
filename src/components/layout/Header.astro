@@ -1,5 +1,7 @@
 ---
 import ThemeToggle from "../ThemeToggle.astro";
+import { Image } from "@astrojs/image/components";
+import aboutImg from "../../assets/mehdi4j.png";
 
 const url = new URL(Astro.request.url);
 
@@ -42,7 +44,58 @@ const menuLinks = [
 			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-			<svg
+			<!-- <svg
+				class="mr-3 h-10 w-6 sm:absolute sm:left-[-4.5rem] sm:mr-0 sm:h-20 sm:w-12"
+				aria-hidden="true"
+				focusable="false"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 272 480"
+				><defs
+					><style>
+						.cls-1 {
+							isolation: isolate;
+						}
+						.cls-2 {
+							fill: #3f3fba;
+						}
+						.cls-3 {
+							fill: #cb4100;
+						}
+						.cls-4 {
+							fill: #ff5d00;
+						}
+						.cls-5 {
+							fill: #00c78a;
+						}
+					</style></defs
+				><title>Logo</title><g class="cls-1"
+					><path
+						class="cls-2"
+						d="M316.08,406.4l-21.14-12.29a1.07,1.07,0,0,1-.35-1l21.14,12.29A1.07,1.07,0,0,0,316.08,406.4Z"
+						transform="translate(-294.41 -308.93)"></path><path
+						class="cls-3"
+						d="M345.95,388l-0.1-35.76L324.7,339.93l0.1,35.76a1.07,1.07,0,0,0,.36,1L346.3,389A1.07,1.07,0,0,1,345.95,388Z"
+						transform="translate(-294.41 -308.93)"></path><polygon
+						class="cls-3"
+						points="40.97 64.13 19.82 51.84 27.39 7.83 48.53 20.12 40.97 64.13"></polygon><path
+						class="cls-3"
+						d="M332.18,396.08l-6.95-32-21.14-12.29,6.95,32a1.11,1.11,0,0,0,.44.73l21.14,12.29A1.11,1.11,0,0,1,332.18,396.08Z"
+						transform="translate(-294.41 -308.93)"></path><path
+						class="cls-4"
+						d="M333.47,309a1.07,1.07,0,0,0-1,.18l-9.13,5.27a3.14,3.14,0,0,0-1.52,2.31l21.14,12.29a3.14,3.14,0,0,1,1.52-2.31l9.13-5.27a1.07,1.07,0,0,1,1-.18Z"
+						transform="translate(-294.41 -308.93)"></path><polygon
+						class="cls-3"
+						points="21.32 96.49 0.17 84.2 0 23.81 21.14 36.1 21.32 96.49"></polygon><path
+						class="cls-4"
+						d="M306,324.91a1.09,1.09,0,0,0-1.08.17l-9.13,5.27a2.64,2.64,0,0,0-1.38,2.39L315.55,345a2.64,2.64,0,0,1,1.38-2.39l9.13-5.27a1.09,1.09,0,0,1,1.08-.17Z"
+						transform="translate(-294.41 -308.93)"></path><path
+						class="cls-5"
+						d="M353.59,321.48c0.9-.52,1.38-0.24,1.38.8l0.17,60.39a2.63,2.63,0,0,1-1.37,2.39l-6.44,3.72c-0.89.52-1.38,0.24-1.38-.8l-0.1-35.76-0.49.28-6.75,39.87a3.14,3.14,0,0,1-1.52,2.31l-3.39,2c-0.83.48-1.31,0.28-1.52-.55l-6.95-32-0.49.28,0.1,35.76a2.64,2.64,0,0,1-1.38,2.39l-6.36,3.67c-0.9.52-1.39,0.24-1.39-.79L315.55,345a2.64,2.64,0,0,1,1.38-2.39l9.13-5.27c0.83-.48,1.31-0.28,1.52.55l7.79,35.14,7.57-44a3.14,3.14,0,0,1,1.52-2.31Z"
+						transform="translate(-294.41 -308.93)"></path></g
+				></svg
+			> -->
+			<!-- <svg
 				class="mr-3 h-10 w-6 sm:absolute sm:left-[-4.5rem] sm:mr-0 sm:h-20 sm:w-12"
 				aria-hidden="true"
 				focusable="false"
@@ -61,8 +114,16 @@ const menuLinks = [
 					d="m136 53.333 45.333-26.666v120L226.667 120V80L272 53.333V160l-90.667 53.333v240L136 480V306.667L45.334 360V240l45.333-26.667v53.334L136 240V53.333Z"
 					fill="#53C68C"></path>
 				<path d="M45.334 240 0 213.334v120L45.334 360V240Z" fill="#B04304"></path>
-			</svg>
-			<span class="text-xl font-bold sm:text-2xl">Mehdi4J</span>
+			</svg> -->
+			<Image
+				src={aboutImg}
+				width={100}
+				height={150}
+				alt="A cartoon cactus looking at the 'Astro.build' logo"
+				loading="eager"
+				class="mr-3 h-10 w-6 sm:absolute sm:left-[-4.5rem] sm:mr-0 sm:h-20 sm:w-12"
+			/>
+			<span class="text-xl font-bold sm:text-2xl">M4J</span>
 		</a>
 		<nav
 			id="navigation-menu"
