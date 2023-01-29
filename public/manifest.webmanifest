@@ -1,7 +1,7 @@
 {
 	"name": "Mehdi4J Portfolio",
-	"short_name": "Mehdi4J",
-	"description": "a blog where you can learn & find all tech related topics",
+	"short_name": "M4J",
+	"description": "A Personnel blog covering concepts, guides, and technologies reviews around Cloud Computing, Programming, Virtualization, Operations, Containers and many more...",
 	"icons": [
 		{
 			"src": "/192x192.png",
