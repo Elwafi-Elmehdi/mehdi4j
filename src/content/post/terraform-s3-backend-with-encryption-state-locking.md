@@ -13,7 +13,7 @@ Another aspect is security because Terraform is statefull (uses state) the state
 
 By default Terraform stores state file and previous version of file in the file system, where you first ran **terraform init**. local file systems are not reliable and secure to store such files. Terraform in this case uses default enhanced local backend, so what is a backend?
 
-## Terraform Backend
+## What is Terraform Backend?
 
 A backend defines where and how Terraform stores its state data files.
 Terraform supports a variety of backends like **Terraform Cloud**, **Local**, **HTTP**, **S3** and many more you can check all available backend on [Terraform Docs](https://developer.hashicorp.com/terraform/language/settings/backends/).
