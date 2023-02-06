@@ -56,12 +56,12 @@ $ systemctl start atd
 
 at accepts a lot of date and time formats,in this demo I will share just a few, but you can check on available formats that might fit your liking in at's manual pages `man at`.
 
-By default apt is programmed to read the script to run from standard input but you can pass your scripts, using `pipe` and `cat` command.
+By default apt is programmed to read the script to run from standard input but you can pass your scripts, using the `-f /path/my/script.sh`.
 
 Scheduling a backup to run today at 20:15 in the night. Note that if the time is passed the script will be scheduled for tomorrow at the same time in this case `20:15`.
 
 ```shell
-$ cat myscript.sh | at 20:15
+$ at -f myscript.sh 20:15
 ```
 
 Another useful time format is the `now`, now represent the current date and time, you can add another time unit `now + 3 days`,`now + 2 hours`,`now + 1 weeks`.
@@ -69,13 +69,13 @@ Another useful time format is the `now`, now represent the current date and time
 Running a backup after 15 minutes from current time.
 
 ```shell
-$ cat backup.sh | at now + 15 minutes
+$ at -f backup.sh now + 15 minutes
 ```
 
 Running a database backup at 2 in the morning.
 
 ```shell
-$ cat db_backup.sh | at 2:00AM
+$ at -f db_backup.sh  2:00 AM
 ```
 
 Don't forget that If you scheduled a passed time, the script will run next day in the same time.
