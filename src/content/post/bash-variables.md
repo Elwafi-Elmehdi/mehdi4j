@@ -141,7 +141,8 @@ Environment variables are great for configuring programs, passing values to proc
 | $PATH | Columns separated paths where the shell search for commands|
 | $UID | the user ID |
 | $GID | the user group ID |
-Enviremnt variables are great for accessing system information and they come handy in system programing and in system administration.
+
+Environment variables are great for accessing system information and they come handy in system programing and in system administration.
 
 ## Conclusion
 
