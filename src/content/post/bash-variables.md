@@ -1,7 +1,7 @@
 ---
 title: "How to use variables in bash?"
 publishDate: "06 february 2023"
-description: "Variables are great constructs to store information for later use, in all of programming paradigms variables are present, although Bash is not a programming language."
+description: "Variables are great constructs to store information for later use, how ever, in bash there are many different types of variables."
 tags: ["bash", "automation", "programming"]
 ---
 

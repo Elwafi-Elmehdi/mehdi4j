@@ -43,6 +43,13 @@ declare module 'astro:content' {
 
 	const entryMap: {
 		"post": {
+"bash-variables.md": {
+  id: "bash-variables.md",
+  slug: "bash-variables",
+  body: string,
+  collection: "post",
+  data: InferEntrySchema<"post">
+},
 "clear-terraform-cert.md": {
   id: "clear-terraform-cert.md",
   slug: "clear-terraform-cert",
