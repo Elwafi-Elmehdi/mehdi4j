@@ -2,7 +2,7 @@
 title: "Terraform S3 Backend with Encryption and State-Locking"
 publishDate: "23 January 2023"
 description: "Storing Terraform State on S3, with versioning,encryption and state locking"
-tags: ["terraform", "s3", "iac", "aws", "cloud"]
+tags: ["terraform", "s3", "infrastructureascode", "aws", "cloud"]
 ---
 
 ## Terraform State

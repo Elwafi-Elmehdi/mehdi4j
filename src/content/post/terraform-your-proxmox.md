@@ -2,7 +2,7 @@
 title: "Terraform Your Proxmox Servers"
 publishDate: "09 January 2023"
 description: "Setup Terraform with Proxmox VE server, provision VMs using Infrastructure as Code"
-tags: ["proxmox", "iac", "terraform", "virtualization", "automation"]
+tags: ["proxmox", "infrastructureascode", "terraform", "virtualization", "automation"]
 ---
 
 <div align="center">
