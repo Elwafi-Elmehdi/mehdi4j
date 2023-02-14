@@ -1,7 +1,5 @@
 ---
 import ThemeToggle from "../ThemeToggle.astro";
-import { Image } from "@astrojs/image/components";
-import aboutImg from "/public/mehdi4j.png";
 
 const url = new URL(Astro.request.url);
 
@@ -44,108 +42,20 @@ const menuLinks = [
 			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
 			aria-current={url.pathname === "/" ? "page" : false}
 		>
-			<!-- <svg
-				class="mr-3 h-10 w-6 sm:absolute sm:left-[-4.5rem] sm:mr-0 sm:h-20 sm:w-12"
-				aria-hidden="true"
-				focusable="false"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 272 480"
-				><defs
-					><style>
-						.cls-1 {
-							isolation: isolate;
-						}
-						.cls-2 {
-							fill: #3f3fba;
-						}
-						.cls-3 {
-							fill: #cb4100;
-						}
-						.cls-4 {
-							fill: #ff5d00;
-						}
-						.cls-5 {
-							fill: #00c78a;
-						}
-					</style></defs
-				><title>Logo</title><g class="cls-1"
-					><path
-						class="cls-2"
-						d="M316.08,406.4l-21.14-12.29a1.07,1.07,0,0,1-.35-1l21.14,12.29A1.07,1.07,0,0,0,316.08,406.4Z"
-						transform="translate(-294.41 -308.93)"></path><path
-						class="cls-3"
-						d="M345.95,388l-0.1-35.76L324.7,339.93l0.1,35.76a1.07,1.07,0,0,0,.36,1L346.3,389A1.07,1.07,0,0,1,345.95,388Z"
-						transform="translate(-294.41 -308.93)"></path><polygon
-						class="cls-3"
-						points="40.97 64.13 19.82 51.84 27.39 7.83 48.53 20.12 40.97 64.13"></polygon><path
-						class="cls-3"
-						d="M332.18,396.08l-6.95-32-21.14-12.29,6.95,32a1.11,1.11,0,0,0,.44.73l21.14,12.29A1.11,1.11,0,0,1,332.18,396.08Z"
-						transform="translate(-294.41 -308.93)"></path><path
-						class="cls-4"
-						d="M333.47,309a1.07,1.07,0,0,0-1,.18l-9.13,5.27a3.14,3.14,0,0,0-1.52,2.31l21.14,12.29a3.14,3.14,0,0,1,1.52-2.31l9.13-5.27a1.07,1.07,0,0,1,1-.18Z"
-						transform="translate(-294.41 -308.93)"></path><polygon
-						class="cls-3"
-						points="21.32 96.49 0.17 84.2 0 23.81 21.14 36.1 21.32 96.49"></polygon><path
-						class="cls-4"
-						d="M306,324.91a1.09,1.09,0,0,0-1.08.17l-9.13,5.27a2.64,2.64,0,0,0-1.38,2.39L315.55,345a2.64,2.64,0,0,1,1.38-2.39l9.13-5.27a1.09,1.09,0,0,1,1.08-.17Z"
-						transform="translate(-294.41 -308.93)"></path><path
-						class="cls-5"
-						d="M353.59,321.48c0.9-.52,1.38-0.24,1.38.8l0.17,60.39a2.63,2.63,0,0,1-1.37,2.39l-6.44,3.72c-0.89.52-1.38,0.24-1.38-.8l-0.1-35.76-0.49.28-6.75,39.87a3.14,3.14,0,0,1-1.52,2.31l-3.39,2c-0.83.48-1.31,0.28-1.52-.55l-6.95-32-0.49.28,0.1,35.76a2.64,2.64,0,0,1-1.38,2.39l-6.36,3.67c-0.9.52-1.39,0.24-1.39-.79L315.55,345a2.64,2.64,0,0,1,1.38-2.39l9.13-5.27c0.83-.48,1.31-0.28,1.52.55l7.79,35.14,7.57-44a3.14,3.14,0,0,1,1.52-2.31Z"
-						transform="translate(-294.41 -308.93)"></path></g
-				></svg
-			> -->
-			<!-- <svg
-				class="mr-3 h-10 w-6 sm:absolute sm:left-[-4.5rem] sm:mr-0 sm:h-20 sm:w-12"
-				aria-hidden="true"
-				focusable="false"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-				viewBox="0 0 272 480"
-			>
-				<title>Logo</title>
-				<path
-					d="M181.334 93.333v-40L226.667 80v40l-45.333-26.667ZM136.001 53.333 90.667 26.667v426.666L136.001 480V53.333Z"
-					fill="#B04304"></path>
-				<path
-					d="m136.001 119.944 45.333-26.667 45.333 26.667-45.333 26.667-45.333-26.667ZM90.667 26.667 136.001 0l45.333 26.667-45.333 26.666-45.334-26.666ZM181.334 53.277l45.333-26.666L272 53.277l-45.333 26.667-45.333-26.667ZM0 213.277l45.333-26.667 45.334 26.667-45.334 26.667L0 213.277ZM136 239.944l-45.333-26.667v53.333L136 239.944Z"
-					fill="#FF5D01"></path>
-				<path
-					d="m136 53.333 45.333-26.666v120L226.667 120V80L272 53.333V160l-90.667 53.333v240L136 480V306.667L45.334 360V240l45.333-26.667v53.334L136 240V53.333Z"
-					fill="#53C68C"></path>
-				<path d="M45.334 240 0 213.334v120L45.334 360V240Z" fill="#B04304"></path>
-			</svg> -->
-			<!-- <svg
-				class="mr-3 h-10 w-6 sm:absolute sm:left-[-4.5rem] sm:mr-0 sm:h-20 sm:w-12"
-				aria-hidden="true"
-				focusable="false"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-				><defs
-					><style>
-						.cls-1 {
-							fill: #fff;
-						}
-					</style></defs
-				><g id="Layer_2" data-name="Layer 2"
-					><g id="Layer_1-2" data-name="Layer 1"
-						><path
-							d="M61.86,28.23a9.43,9.43,0,0,1-9.43,9.43H12.91a11.25,11.25,0,0,1-1.82-22.35c0-.22,0-.44,0-.67a13,13,0,0,1,25.6-3,9.42,9.42,0,0,1,15.75,7v.15h0A9.43,9.43,0,0,1,61.86,28.23Z"
-						></path><path
-							class="cls-1"
-							d="M12.94,39.4A12.94,12.94,0,0,1,9.45,14,14.67,14.67,0,0,1,33.27,3.22,14.83,14.83,0,0,1,37.63,9,11.12,11.12,0,0,1,54.2,18.69v.22a1.67,1.67,0,1,1-3.33-.16v-.06a7.79,7.79,0,0,0-13-5.78,1.66,1.66,0,0,1-2.74-.85,11.34,11.34,0,0,0-22.37,2.61c0,.19,0,.39,0,.59A1.66,1.66,0,0,1,11.38,17a9.6,9.6,0,0,0,1.56,19.08,1.67,1.67,0,0,1,0,3.34Z"
-						></path></g
-					></g
-				></svg
-			> -->
-			<Image
-				src={aboutImg}
-				width={100}
-				height={150}
-				alt="A Cloud of Ideas"
-				loading="eager"
-				class="mr-3 h-10 w-6 sm:absolute sm:left-[-4.5rem] sm:mr-0 sm:h-20 sm:w-12"
-			/>
+		<svg
+		class="mr-3 w-8 sm:absolute sm:left-[-4.5rem] sm:mr-0 sm:h-16 sm:w-14"
+		xmlns="http://www.w3.org/2000/svg"
+		style="--arc-palette-subtitle:#797A82F9;--arc-palette-maxContrastColor:#ECEDFEFF;--arc-background-gradient-color0:#01021EFF;--arc-palette-minContrastColor:#212AFBFF;--arc-palette-title:#DCDEFDF4;--arc-background-gradient-color1:#17011EFF;--arc-palette-hover:#5D64FB7A;--arc-palette-foregroundSecondary:#8489FBFF;--arc-palette-background:#0A0D4EF6;--arc-palette-foregroundTertiary:#3139FBFF;--arc-palette-foregroundPrimary:#ECEDFEFF;--arc-palette-backgroundExtra:#050727F4;--arc-palette-focus:#4D54FBCE;--arc-palette-cutoutColor:#212AFBFF"
+		viewBox="0 0 61.86 39.4"
+		><g data-name="Layer 2"
+			><g data-name="Layer 1"
+				><path
+					d="M61.86 28.23a9.43 9.43 0 0 1-9.43 9.43H12.91a11.25 11.25 0 0 1-1.82-22.35v-.67a13 13 0 0 1 25.6-3 9.42 9.42 0 0 1 15.75 7v.15a9.43 9.43 0 0 1 9.42 9.44Z"
+					style="fill:#51c78d"></path><path
+					d="M12.94 39.4A12.94 12.94 0 0 1 9.45 14 14.67 14.67 0 0 1 33.27 3.22 14.83 14.83 0 0 1 37.63 9a11.12 11.12 0 0 1 16.57 9.69v.22a1.67 1.67 0 1 1-3.33-.16v-.06a7.79 7.79 0 0 0-13-5.78 1.66 1.66 0 0 1-2.74-.85 11.34 11.34 0 0 0-22.37 2.61v.59A1.66 1.66 0 0 1 11.38 17a9.6 9.6 0 0 0 1.56 19.08 1.67 1.67 0 0 1 0 3.34Z"
+					style="fill:#fff"></path></g
+			></g
+		></svg>
 			<span class="text-xl font-bold sm:text-2xl">M4J</span>
 		</a>
 		<nav
