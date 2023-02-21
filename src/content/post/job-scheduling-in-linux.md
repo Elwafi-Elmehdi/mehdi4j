@@ -1,6 +1,6 @@
 ---
 title: "Job Scheduling in Linux"
-publishDate: "06 february 2023"
+publishDate: "07 february 2023"
 description: "Automation is considered a best practice in IT, it reduces operational overhead, reduces/cut human errors, and save us time."
 tags: ["bash", "automation", "linux"]
 ---
