@@ -78,6 +78,13 @@ declare module 'astro:content' {
   collection: "post",
   data: InferEntrySchema<"post">
 },
+"proxmox-templates.md": {
+  id: "proxmox-templates.md",
+  slug: "proxmox-templates",
+  body: string,
+  collection: "post",
+  data: InferEntrySchema<"post">
+},
 "terraform-cli-vs-cloud-workspaces.md": {
   id: "terraform-cli-vs-cloud-workspaces.md",
   slug: "terraform-cli-vs-cloud-workspaces",

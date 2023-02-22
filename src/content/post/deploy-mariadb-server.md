@@ -2,7 +2,7 @@
 title: "Deploy & Configure MariaDB Server"
 publishDate: "21 January 2023"
 description: "Deploy and Configure MariaDB Server in a Linux environments"
-tags: ["DBRMS", "linux", "operations"]
+tags: ["RDBMS", "linux", "operations"]
 ---
 
 in this guide, we are going to install & configure MariaDB server community edition on Linux server.
