@@ -196,7 +196,7 @@ $ docker history <image:tag>
 
 ## Putting it All Together
 
-in this section we will summerize what we saw before and demonstrate how to use dockerfiles to build your containers image. We
+in this section we will summarize what we saw before and demonstrate how to use dockerfiles to build your containers image.
 
 ```docker
 # Use a lightweight Node.js image as a base
