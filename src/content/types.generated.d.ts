@@ -71,6 +71,13 @@ declare module 'astro:content' {
   collection: "post",
   data: InferEntrySchema<"post">
 },
+"infrastructure-as-code-with-terraform.md": {
+  id: "infrastructure-as-code-with-terraform.md",
+  slug: "infrastructure-as-code-with-terraform",
+  body: string,
+  collection: "post",
+  data: InferEntrySchema<"post">
+},
 "job-scheduling-in-linux.md": {
   id: "job-scheduling-in-linux.md",
   slug: "job-scheduling-in-linux",

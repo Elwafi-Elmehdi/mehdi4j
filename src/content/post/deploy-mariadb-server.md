@@ -2,7 +2,7 @@
 title: "Deploy & Configure MariaDB Server"
 publishDate: "21 January 2023"
 description: "Deploy and Configure MariaDB Server in a Linux environments"
-tags: ["RDBMS", "linux", "operations"]
+tags: ["rdbms", "linux", "operations"]
 ---
 
 in this guide, we are going to install & configure MariaDB server community edition on Linux server.
@@ -13,7 +13,7 @@ in this guide, we are going to install & configure MariaDB server community edit
 >
 > ~ MariaDB Website
 
-MariaDB Server is a great RDBM for running production & Dev/Test OLTP workloads like , CRM, E-Commerce, ERP Systems, in this guide we are installing MariaDB on a Linux server.
+MariaDB Server is a great RDBMS for running production & Dev/Test OLTP workloads like , CRM, E-Commerce, ERP Systems, in this guide we are installing MariaDB on a Linux server.
 
 In this Guide I have prepared a VM with specs below, Depending on your environment and your application data access pattern replace these resources to meet your application demand.
 
@@ -31,7 +31,7 @@ First thing is to update package repositories to get the latest version of packa
 $ sudo apt update
 ```
 
-If you just provisioned the server, it would likely be outdated , runa full system upgrade to install security patches.
+If you just provisioned the server, it would likely be outdated , run a full system upgrade to install security patches.
 
 ```shell
 $ sudo apt upgrade
@@ -43,7 +43,7 @@ Next we are installing the MariaDB server and client and mycli utility which is 
 $ sudo apt install mycli mariadb-client mariadb-server`
 ```
 
-After the instaltion is done, we have to run the MySQL secure installation command, it is an interactive script that guides you through some security messures to harden your database server, it resets insecure default configurations and removes default users & databases.
+After the installation is done, we have to run the MySQL secure installation command, it is an interactive script that guides you through some security measures to harden your database server, it resets insecure default configurations and removes default users & databases.
 
 ```shell
 $ sudo mysql_secure_installation`
