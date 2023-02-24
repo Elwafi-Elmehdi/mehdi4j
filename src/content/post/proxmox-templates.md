@@ -1,8 +1,7 @@
 ---
 title: "How to create Proxmox  templates?"
 publishDate: "23 february 2023"
-description: "
-Linux Distributions often maintain images for cloud providers mainly for OpenStack, these images work in Proxmox too."
+description: "Linux Distributions often maintain images for cloud providers mainly for OpenStack, these images work in Proxmox too."
 tags: ["proxmox", "virtualization", "automation"]
 ---
 
