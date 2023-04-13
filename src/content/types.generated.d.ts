@@ -120,6 +120,13 @@ declare module 'astro:content' {
   collection: "post",
   data: InferEntrySchema<"post">
 },
+"zabbix-6.0-setup-complete-guide.md": {
+  id: "zabbix-6.0-setup-complete-guide.md",
+  slug: "zabbix-60-setup-complete-guide",
+  body: string,
+  collection: "post",
+  data: InferEntrySchema<"post">
+},
 },
 
 	};
