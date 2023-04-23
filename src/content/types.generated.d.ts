@@ -113,6 +113,13 @@ declare module 'astro:content' {
   collection: "post",
   data: InferEntrySchema<"post">
 },
+"vagrant-overview.md": {
+  id: "vagrant-overview.md",
+  slug: "vagrant-overview",
+  body: string,
+  collection: "post",
+  data: InferEntrySchema<"post">
+},
 "what-is-dockerfile.md": {
   id: "what-is-dockerfile.md",
   slug: "what-is-dockerfile",
