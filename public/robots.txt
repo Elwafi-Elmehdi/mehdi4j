@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.mehdi4j.online/sitemap-index.xml
+Sitemap: https://www.mehdij4.com/sitemap-index.xml

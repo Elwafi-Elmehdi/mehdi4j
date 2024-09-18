@@ -1,14 +1,13 @@
 ---
-import PageLayout from "@/layouts/Base";
-import { getUniqueTagsWithCount } from "@/utils";
-import { getCollection } from "astro:content";
+import { getAllPosts, getUniqueTagsWithCount } from "@/data/post";
+import PageLayout from "@/layouts/Base.astro";
 
-const allPosts = await getCollection("post");
+const allPosts = await getAllPosts();
 const allTags = getUniqueTagsWithCount(allPosts);
 
 const meta = {
-	title: "Tags",
 	description: "Mehdi4J Tags Page : All Tags from my posts",
+	title: "All Tags",
 };
 ---
 
@@ -16,13 +15,13 @@ const meta = {
 	<h1 class="title mb-6">Tags</h1>
 	<ul class="space-y-4">
 		{
-			Object.entries(allTags).map(([tag, val]) => (
+			allTags.map(([tag, val]) => (
 				<li class="flex items-center gap-x-2">
 					<a
 						class="cactus-link inline-block"
-						href={`/tags/${tag}`}
+						data-astro-prefetch
+						href={`/tags/${tag}/`}
 						title={`View posts with the tag: ${tag}`}
-						rel="prefetch"
 					>
 						&#35;{tag}
 					</a>
