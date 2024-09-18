@@ -1,4 +1,6 @@
-<div align="center">
+## Deploy status`
+[![Netlify Status](https://api.netlify.com/api/v1/badges/db0d51a6-eccf-4bf5-9475-5cd65bfde57c/deploy-status)](https://app.netlify.com/sites/mehdi4j/deploys)
+<!-- <div align="center">
   <img alt="Astro Theme Cactus logo" src="./gh-assets/astro-cactus-logo.png" width="70" />
 </div>
 <h1 align="center">
@@ -83,4 +85,4 @@ This theme is inspired by [Hexo Theme Cactus](https://github.com/probberechts/he
 
 ## License
 
-Licensed under the MIT License, Copyright © 2022
+Licensed under the MIT License, Copyright © 2022 -->
