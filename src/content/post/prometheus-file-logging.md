@@ -2,7 +2,6 @@
 title: "Prometheus file logging"
 publishDate: "19 september 2024"
 description: "Prometheus by defaults uses syslog to log its tasks."
-draft: true
 tags: ["prometheus", "monitoring"]
 ---
 
