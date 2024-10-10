@@ -23,7 +23,7 @@ total 8
 drwxr-xr-x  2 prometheus prometheus 4096 Aug 25 21:13 ./
 drwxr-xr-x 54 prometheus prometheus 4096 Aug 27 07:00 ../
 ```
-Mine is empty but you will file a timestamp dir containing hard links to all data blocks
+Mine is empty but you will find a dirs which are hard links to all data blocks dirs.
 
 Backup the dir as tarball, this can take time so it's better to executed under a terminal screen.
 
