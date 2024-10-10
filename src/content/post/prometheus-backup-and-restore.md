@@ -1,7 +1,7 @@
 ---
 title: "Prometheus Backup & Restore"
 publishDate: "10 October 2024"
-description: "This is how to backup/restore Prometheus."
+description: "a step by step guide to show you how to backup/restore Prometheus."
 tags: ["prometheus", "monitoring"]
 ---
 ## Backup
