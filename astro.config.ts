@@ -8,7 +8,7 @@ import prefetch from "@astrojs/prefetch";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://www.mehdi4j.online",
+	site: "https://mehdij4.com",
 	experimental: {
 		contentCollections: true,
 	},
